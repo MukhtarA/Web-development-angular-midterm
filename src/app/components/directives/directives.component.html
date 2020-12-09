@@ -1,0 +1,9 @@
+<div>
+  <h5 style="text-align: center" [ngClass]="is ? 'text-green' : 'text-red'"> {{text1}} </h5>
+
+  <ul *ngIf="numbers.length > 0">
+    <li *ngFor="let number of numbers" >{{text3 | lowercase}}{{number | currency}}</li>
+  </ul>
+
+  <p *ngIf="numbers.length == 0">No data</p>
+</div>
